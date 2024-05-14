@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrap{
+  max-width: 1120px;
+  padding:0px 20px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
+.home-wrap{
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: url(https://familyresourcesinc.org/wp-content/uploads/2020/01/volunteer-pic-scaled-1200x600.jpg)#ffffffa1;
+  background-blend-mode:overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+  background:#3F90FC ;
+  border: none;
+  padding:10px 22px;
+  border-radius: 6px;
+  font-weight: 500;
+  color:#fff;
+  cursor: pointer;
+  transition: .3s ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover{
+  opacity: 90%;
 }
