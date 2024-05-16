@@ -4,7 +4,9 @@ import HomeTop from "../Components/HomeTop/HomeTop";
 import fakeData from "../FakeData/FakeData.json";
 import Card from "../Components/Card/Card";
 
+
 function Home() {
+
   return (
     <section className="home-wrap" id="home">
       <div className="wrap">

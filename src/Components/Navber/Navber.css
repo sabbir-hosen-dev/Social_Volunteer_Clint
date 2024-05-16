@@ -1,24 +1,81 @@
-nav{
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 10px 20px;
 }
-.logo{
+.logo {
   width: 150px;
 }
-ul{
+nav ul {
   display: flex;
-  gap:30px;
+  flex-wrap: wrap;
+  gap: 30px;
+  color:#0b0b0b;
   align-items: center;
 }
-ul .link{
+ul .link {
   font-weight: 500;
 }
-.link{
-  color:#0B0B0B;
-  font-size:16px;
+.link {
+  color: #0b0b0b;
+  font-size: 16px;
 }
 ul .admin {
   background: #434141;
+}
+.menu{
+  display: none;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3 ease;
+  z-index: 10;
+}
+.menu:hover{
+  opacity: 80%;
+}
+.close{
+  color:#fff;
+  font-size: 25px;
+}
+.hide{
+  display: none;
+}
+.active{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  width: 100%;
+  transform: translate(-50%);
+  background: rgba(27, 27, 27, 0.517);
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 9;
+}
+.active .link{
+  color:#fff;
+}
+@media screen and (max-width:950px) {
+  nav ul{
+    flex-direction: column;
+    height: 100vh;
+    background: #00000095;
+    position: absolute;
+    width: 40vw;
+    justify-content: center;
+    top:0;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50% -100%);
+    transition: .3s ease;
+  }
+  nav ul .link{
+    color:#fff;
+  }
+  .menu{
+    display: block;
+  }
 }

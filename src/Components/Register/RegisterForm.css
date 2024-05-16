@@ -1,0 +1,49 @@
+.register-form{
+  border:1px solid #ABABAB;
+  padding:30px;
+  border-radius: 5px;
+}
+.register-form h4{
+  margin-bottom: 15px;
+}
+.input-wrap{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  position: relative;
+}
+.input-wrap label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-wrap input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #ABABAB;
+  outline: none;
+  background: transparent;
+}
+.date{
+  background-color: #fff;
+  width: 150px;
+}
+.input-wrap input:focus ~ label,
+.input-wrap input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.button-wrap button{
+  width: 100%;
+}

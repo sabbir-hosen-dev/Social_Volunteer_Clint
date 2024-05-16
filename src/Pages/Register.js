@@ -1,14 +1,14 @@
 import React from 'react'
 import PageNav from '../Components/PageNave/PageNav'
-import LolginForm from '../Components/Login/LolginForm'
+import RegisterForm from '../Components/Register/RegisterForm'
 
-function Login() {
+function Register() {
   return (
     <div className='login'>
       <PageNav />
-      <LolginForm />
+      <RegisterForm />
     </div>
   )
 }
 
-export default Login
+export default Register

@@ -1,0 +1,10 @@
+.page-header{
+  position: absolute;
+  display:flex;
+  top:0;
+  justify-content: center;
+}
+.page-header img {
+  width: 150px;
+  padding:20px 0px
+}
