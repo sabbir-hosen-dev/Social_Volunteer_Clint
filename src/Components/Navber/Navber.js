@@ -19,7 +19,6 @@ function Navber() {
     }
   };
 
-    console.log(user)
   window.addEventListener("scroll", handleScroll);
 
   return (

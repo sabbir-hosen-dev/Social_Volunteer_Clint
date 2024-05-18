@@ -6,7 +6,7 @@ import useFetch from "../Hook/useFetch";
 
 
 function Home() {
-  const url = "http://localhost:5001/allData";
+  const url = "https://social-volunteer-server.onrender.com/allData";
 
   const {data,isLodding,error} = useFetch(url);
 

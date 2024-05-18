@@ -16,7 +16,7 @@ function AddEvent() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5001/postEvent",{
+    fetch("https://social-volunteer-server.onrender.com/postEvent",{
       method:"POST",
       headers:{
         "Content-Type" : "application/json"
@@ -32,7 +32,7 @@ function AddEvent() {
   }
   return (
     <div className="addEvent">
-      <form action="" onSubmit={handleSubmit}>
+      <form action="" className="addEventForm" onSubmit={handleSubmit}>
         <div className="input-div">
           <label htmlFor="title">Title</label>
           <input

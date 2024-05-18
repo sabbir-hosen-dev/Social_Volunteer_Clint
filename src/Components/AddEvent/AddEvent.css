@@ -5,7 +5,7 @@
   border-radius: 10px;
   position: relative;
 }
-form{
+.addEventForm{
   display: flex;
   gap:30px;
   flex-wrap: wrap;

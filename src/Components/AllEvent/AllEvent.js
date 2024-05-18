@@ -7,12 +7,12 @@ import "./AllEvent.css"
 
 function AllEvent() {
 
-  const url = `http://localhost:5001/attendEvent`;
+  const url = `https://social-volunteer-server.onrender.com/attendEvent`;
   const { data, isLoading, error, refetch } = useFetch(url);
 
 
   const handleCencle = (id) => {
-    fetch(`http://localhost:5001/deleteAttendEvent/${id}`, {
+    fetch(`https://social-volunteer-server.onrender.com/deleteAttendEvent/${id}`, {
       method: "DELETE",
     })
       .then((response) => {

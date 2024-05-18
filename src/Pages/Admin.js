@@ -6,7 +6,7 @@ import AllEvent from "../Components/AllEvent/AllEvent";
 import AddEvent from "../Components/AddEvent/AddEvent";
 
 function Admin() {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
 
   return (
     <div className="admin-wrap">

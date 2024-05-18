@@ -26,7 +26,7 @@ function RegisterForm() {
     e.preventDefault();
     const volunteerImg = selectItem.img
     const data ={...formData,...user,volunteerImg}
-    fetch("http://localhost:5001/addData",{
+    fetch("https://social-volunteer-server.onrender.com/addData",{
       method:"POST",
       headers:{
         "Content-Type" : "application/json"

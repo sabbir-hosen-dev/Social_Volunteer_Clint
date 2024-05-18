@@ -6,13 +6,13 @@ import useFetch from "./../Hook/useFetch";
 function Profile() {
   const { user } = useAppContex();
 
-  const url = `http://localhost:5001/userData?email=${user.email}`;
+  const url = `https://social-volunteer-server.onrender.com/userData?email=${user.email}`;
   const { data, isLodding, error,refetch } = useFetch(url);
 
 
   const handleCencle = (id) => {
 
-    fetch(`http://localhost:5001/deleteItem/${id}`, {
+    fetch(`https://social-volunteer-server.onrender.com/deleteItem/${id}`, {
       method: "DELETE",
     })
       .then((response) => {
