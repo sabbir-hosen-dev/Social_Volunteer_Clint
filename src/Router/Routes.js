@@ -34,9 +34,9 @@ function AppRoutes() {
         <Route
           path="/admin"
           element={
-            <ProctedRoute >
+            <ProctedRoute>
               <Admin />
-              </ProctedRoute>
+            </ProctedRoute>
           }
         />
         <Route path="*" element={<Error />} />

@@ -1,0 +1,31 @@
+.addEvent{
+  background-color: #fff;
+  width: 100%;
+  padding:20px;
+  border-radius: 10px;
+  position: relative;
+}
+form{
+  display: flex;
+  gap:30px;
+  flex-wrap: wrap;
+}
+.input-div{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  flex:1 1 350px;
+}
+.input-div input,
+.input-div textarea
+{
+  padding: 10px 5px;
+  border: 1px solid hwb(0 85% 15%);
+  border-radius: 5px;
+  font-size: 15px;
+}
+.submitBtn{
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}

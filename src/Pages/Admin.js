@@ -6,7 +6,7 @@ import AllEvent from "../Components/AllEvent/AllEvent";
 import AddEvent from "../Components/AddEvent/AddEvent";
 
 function Admin() {
-  const [click, setClick] = useState(true);
+  const [click, setClick] = useState(false);
 
   return (
     <div className="admin-wrap">
@@ -15,10 +15,15 @@ function Admin() {
           <img src={require("../Assist/Images/logo.png")} alt="" />
         </Link>
         <ul>
-          <li onClick={() => setClick(true)}>
+          <li
+            onClick={() => setClick(true)}
+            style={{ color: click ? "#207FEE" : "" }}
+          >
             <FaUserFriends /> Volunteer register list
           </li>
-          <li onClick={() => setClick(false)}>
+          <li onClick={() => setClick(false)}
+          style={{ color: !click ? "#207FEE" : "" }}
+          >
             <BiPlus /> Add Event
           </li>
         </ul>
