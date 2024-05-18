@@ -6,6 +6,7 @@ import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Profile from "../Pages/Profile";
 import ProctedRoute from "./ProctedRoute";
+import Admin from "../Pages/Admin";
 
 function AppRoutes() {
   return (
@@ -28,6 +29,14 @@ function AppRoutes() {
             <ProctedRoute>
               <Profile />
             </ProctedRoute>
+          }
+        />
+        <Route
+          path="/admin"
+          element={
+            <ProctedRoute >
+              <Admin />
+              </ProctedRoute>
           }
         />
         <Route path="*" element={<Error />} />

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navber from "./../Components/Navber/Navber";
 import useAppContex from "../Hook/useContext";
 import useFetch from "./../Hook/useFetch";
@@ -11,6 +11,7 @@ function Profile() {
 
 
   const handleCencle = (id) => {
+
     fetch(`http://localhost:5001/deleteItem/${id}`, {
       method: "DELETE",
     })

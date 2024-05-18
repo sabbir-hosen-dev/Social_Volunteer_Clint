@@ -28,7 +28,7 @@ const reducer = (state, action) => {
         },
       };
     case "SET_LOGIN":
-      console.log(action.payload);
+      
       return {
         ...state,
         login: action.payload,
