@@ -50,3 +50,56 @@ html{
   height: 100vh;
   color:Red
 }
+.message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.profile-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap:50px;
+  margin-top: 50px;
+}
+
+.profile-content{
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 400px;
+  width: 45%;
+  padding:10px;
+  display: grid;
+  gap:20px;
+  grid-template-columns: 150px 1fr;
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px -1px #00000078;
+}
+.left{
+  border-radius: 10px;
+  overflow: hidden;
+}
+.left img{
+  max-width: 150px;
+}
+.right{
+  position: relative;
+}
+.cancle{
+  background: #ddd;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.cancle:hover{
+  background: red;
+}
+
+.red{
+  color:red;
+}
+@media screen and(min-width:900px) {
+
+}

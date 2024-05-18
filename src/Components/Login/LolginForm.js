@@ -7,7 +7,7 @@ import useAppContex from "../../Hook/useContext";
 import { signInWithPopup } from "firebase/auth";
 import { auth, googleProvider } from "../../Firebase/Fire";
 
-function LolginForm() {
+function LolginForm({item}) {
 
   const {setLogin,setUser} = useAppContex()
   const location = useLocation();

@@ -10,11 +10,15 @@ const AppProvider = ({ children }) => {
   const value = {
     user:state.user,
     login:state.login,
+    selectItem: state.selectItem,
     setLogin: (value) => {
       dispatch({type:"SET_LOGIN", payload:value})
     },
     setUser:(data) => {
       dispatch({type:"ADD_USER",payload:data})
+    },
+    setItem: (item) => {
+      dispatch({type:"SELECT", payload:item})
     }
   };
 

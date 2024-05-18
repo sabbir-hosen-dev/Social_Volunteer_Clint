@@ -1,37 +1,42 @@
 export const initialValue = {
   user: {
     name: "",
-    email:"",
-    photo:""
+    email: "",
+    photo: "",
   },
   login: false,
-  selectItem :[]
+  selectItem: "",
 };
 
- const reducer = (state,action) => {
+const reducer = (state, action) => {
   switch (action.type) {
+    case "SELECT":
+      return {
+        ...state,
+        selectItem: action.payload,
+      };
 
     case "ADD_USER":
-      const {name,photo,email} = action.payload
-     return{
-      ...state,
-      user: {
-        ...state.user,
-        name:name,
-        photo:photo,
-        email:email
-      }
-     }
+      const { name, photo, email } = action.payload;
+      return {
+        ...state,
+        user: {
+          ...state.user,
+          name: name,
+          photo: photo,
+          email: email,
+        },
+      };
     case "SET_LOGIN":
-      console.log(action.payload)
-     return{
-      ...state,
-      login: action.payload
-     }
-  
+      console.log(action.payload);
+      return {
+        ...state,
+        login: action.payload,
+      };
+
     default:
       return state;
   }
-}
+};
 
 export default reducer;
